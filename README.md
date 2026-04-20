@@ -1,5 +1,5 @@
-[Hosting a simple website in virtual machine (Azure 2ffc21e9947c8097acdfed175b55b167.md](https://github.com/user-attachments/files/26895993/Hosting.a.simple.website.in.virtual.machine.Azure.2ffc21e9947c8097acdfed175b55b167.md)
-# Hosting a simple website in virtual machine (Azure or Aws)
+[RDP Remote Connecton uing my public ip address on my local system (Azure 2ffc21e9947c8097acdfed175b55b167.md](https://github.com/user-attachments/files/26895993/Hosting.a.simple.website.in.virtual.machine.Azure.2ffc21e9947c8097acdfed175b55b167.md)
+# RDP Remote Connection using my public IP address (Azure or Aws)
 
 ## Designing Secure Azure VM Architecture using Cloud Networking : This documentation explains  how understanding  cloud networking before deployment helps in designing  secure and scalable virtual machine architecture  in Azure.
 
