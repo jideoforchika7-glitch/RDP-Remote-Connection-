@@ -5,7 +5,7 @@
 
 [https://www.notion.so](https://www.notion.so)
 
-![Screenshot (./2026-02-04 211604%201.png](./Screenshot_2026-02-04_211604%201.png)
+![Screenshot (./2026-02-04 211604%201.png](Screenshot_2026-02-04_211604.png)
 
 The diagram shows a Virtual Network (VNet) containing three subnets, Frontend,Backend and Database each with its own IP address range. Every subnet is associated with a Network Security Group (NSG) to control traffic flow. This setup ensures that resources in each subnet can communicate securely within the VNet while applying specific security rules for each subnet independently.
 
@@ -26,11 +26,11 @@ Resource Group:  create a new one.
 Name: Give your VNet a name (e.g., ChikajideVNet).
 Region: Choose the region where your VNet will reside.(North Europe 
 
-![Screenshot 2026-02-04 180439.png](./Screenshot_2026-02-04_180439%201.png)
+![Screenshot 2026-02-04 180439.png](Screenshot_2026-02-04_180439.png)
 
-![Screenshot 2026-02-04 180516.png](./Screenshot_2026-02-04_180516%201.png)
+![Screenshot 2026-02-04 180516.png](Screenshot_2026-02-04_180516.png)
 
-![Screenshot 2026-02-04 180700.png](./Screenshot_2026-02-04_180700%201.png)
+![Screenshot 2026-02-04 180700.png](Screenshot_2026-02-04_180700.png)
 
 Step 4: Address Space
 Specify the IP address range for your VNet (CIDR notation), e.g., 192.168.0.0/16.
@@ -57,17 +57,17 @@ Step 8: Verification
 Go to Virtual Networks in the portal.
 Click your VNet → check Address space, Subnets, and NSG associations.
 
-![Screenshot 2026-02-04 182300.png](./Screenshot_2026-02-04_182300%201.png)
+![Screenshot 2026-02-04 182300.png](Screenshot_2026-02-04_182300.png)
 
-![Screenshot 2026-02-04 182422.png](./Screenshot_2026-02-04_182422%201.png)
+![Screenshot 2026-02-04 182422.png](Screenshot_2026-02-04_182422.png)
 
-![Screenshot 2026-02-06 121813.png](./Screenshot_2026-02-06_121813%201.png)
+![Screenshot 2026-02-06 121813.png](Screenshot_2026-02-06_1218131.png)
 
 This completes the deployment of a Virtual Network (VNet) in Azure. The VNet now contains multiple subnets, each with its own IP address range and optional Network Security Group (NSG) for traffic control. This setup provides a secure and organized network environment for deploying Azure resources such as virtual machines, databases, and applications. All configurations can be monitored and modified through the Azure portal as needed.
 
 ## AWS VPC Architecture Deployment: Designing and Implementing Virtual Networks:
 
-![Screenshot 2026-02-06 124406.png](./Screenshot_2026-02-06_124406%201.png)
+![Screenshot 2026-02-06 124406.png](Screenshot_2026-02-06_124406.png)
 
 ## **AWS VPC Architecture Illustration: 3-Subnet Deployment with Security and Logging VPC Details:**
 
@@ -114,7 +114,7 @@ Front-end communicates with Back-end Subnet for business logic
 Back-end communicates with Database Subnet for data operations
 All traffic monitored via VPC Flow Logs for auditing and management
 
-![Screenshot 2026-02-05 114019.png](./Screenshot_2026-02-05_114019%201.png)
+![Screenshot 2026-02-05 114019.png](Screenshot_2026-02-05_114019.png)
 
 # Step-by-Step Process to Create a VPC in AWS
 
@@ -130,14 +130,14 @@ IPv6: Optional
 Tenancy: Default
 Click Create VPC
 
-![Screenshot 2026-02-05 114525.png](./Screenshot_2026-02-05_114525%201.png)
+![Screenshot 2026-02-05 114525.png](Screenshot_2026-02-05_114525.png)
 
 - Attach Internet Gateway (IGW)
 Go to Internet Gateways → Create Internet Gateway
 Name it: MyVPC-IGW
 Click Actions → Attach to VPC and select MyVPC
 
-![Screenshot 2026-02-05 123115.png](./Screenshot_2026-02-05_123115%201.png)
+![Screenshot 2026-02-05 123115.png](Screenshot_2026-02-05_123115.png)
 
 - Create Subnets
 Create 3 subnets for Front-end, Back-end, and Database:
@@ -155,7 +155,7 @@ Name: DatabaseSubnet
 CIDR block: 192.168.2.0/24
 - Enable Your DNS hostnames for your automatic public IP Address.
 
-![Screenshot 2026-02-05 123519.png](./Screenshot_2026-02-05_123519%201.png)
+![Screenshot 2026-02-05 123519.png](Screenshot_2026-02-05_123519.png)
 
 - Configure Route Tables
 Go to Route Tables → Create Route Table
@@ -167,11 +167,11 @@ Target: Select your IGW
 Associate this route table with Front-end Subnet
 For Back-end & Database subnets, you can use a private route table (no direct IGW)
 
-![Screenshot 2026-02-05 124438.png](./Screenshot_2026-02-05_124438%201.png)
+![Screenshot 2026-02-05 124438.png](Screenshot_2026-02-05_124438.png)
 
 Clear Overview of  my VPC dashboard.
 
-![Screenshot 2026-02-05 130701.png](./Screenshot_2026-02-05_130701%201.png)
+![Screenshot 2026-02-05 130701.png](Screenshot_2026-02-05_130701.png)
 
 - Enable VPC Flow Logs
 Go to VPC → Your VPCs → Flow Logs → Create Flow Log
@@ -181,9 +181,9 @@ Destination: CloudWatch Logs or S3 Buckets preferably
 Click Create Flow Log Accepted, Rejected or  All
 This will log all inbound and outbound traffic for monitoring
 
-![Screenshot 2026-02-05 131116.png](./Screenshot_2026-02-05_131116%201.png)
+![Screenshot 2026-02-05 131116.png](Screenshot_2026-02-05_131116.png)
 
-![Screenshot 2026-02-05 155312.png](./Screenshot_2026-02-05_155312%201.png)
+![Screenshot 2026-02-05 155312.png](Screenshot_2026-02-05_155312.png)
 
 Launch EC2 Instance: Window Machine using window Microsoft (AMI)
 
@@ -197,7 +197,7 @@ Go to editting,select frontend-subnet,Enable to put IOPS address to the VM.
 
 Click and Launch 
 
-![Screenshot 2026-02-05 155332.png](./Screenshot_2026-02-05_155332%201.png)
+![Screenshot 2026-02-05 155332.png](Screenshot_2026-02-05_155332.png)
 
 ![Screenshot 2026-02-05 161026.png](Screenshot_2026-02-05_161026.png)
 
